@@ -28,6 +28,3 @@ if(BUILD_MAIN)
 		target_link_libraries(main cmt ${OpenCV_LIBS})
 	endif()
 endif()
-
-INSTALL(TARGETS cmt LIBRARY DESTINATION lib)
-install(FILES CMT.h DESTINATION include)
