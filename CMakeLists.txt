@@ -12,7 +12,7 @@ option(BUILD_WITH_QT "Use QDebug" OFF)
 include_directories(${OpenCV_INCLUDE_DIRS})
 link_directories(${OpenCV_LIB_DIR})
 
-add_library(cmt CMT.cpp)
+add_library(cmt SHARED CMT.cpp)
 target_link_libraries(cmt ${OpenCV_LIBS})
 
 if(BUILD_MAIN)
@@ -29,3 +29,5 @@ if(BUILD_MAIN)
 	endif()
 endif()
 
+INSTALL(TARGETS cmt LIBRARY DESTINATION lib)
+install(FILES CMT.h DESTINATION include)
