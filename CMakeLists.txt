@@ -34,5 +34,5 @@ install(TARGETS cmt
   PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_WRITE GROUP_EXECUTE WORLD_READ WORLD_WRITE WORLD_EXECUTE)
 install(FILES CMT.h DESTINATION include/libcmt)
 
-configure_file(libcmt.pc.in libcmt.pc @ONLY)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libcmt.pc DESTINATION lib/pkgconfig)
+# configure_file(libcmt.pc.in libcmt.pc @ONLY)
+# install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libcmt.pc DESTINATION lib/pkgconfig)
